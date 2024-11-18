@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sideQuest Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SideQuest Generator</h1>
+        <form id="quest-form">
+            <label for="budget">Budget ($):</label>
+            <input type="number" id="budget" name="budget" required>
+            
+            <label for="people">Number of People:</label>
+            <input type="number" id="people" name="people" required>
+            
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+            
+            <label for="interests">Interests:</label>
+            <textarea id="interests" name="interests" required></textarea>
+            
+            <button type="submit">Generate SideQuest</button>
+        </form>
+        
+        <div id="quest-output" class="quest-output hidden">
+            <h2>Generated Quest:</h2>
+            <p id="quest-description"></p>
+            <div id="map"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
