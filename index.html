@@ -1,36 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sideQuest Generator</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Global styles -->
+  <link rel="stylesheet" href="home.css"> <!-- Homepage specific styles -->
 </head>
 <body>
-    <div class="container">
-        <h1>SideQuest Generator</h1>
-        <form id="quest-form">
-            <label for="budget">Budget ($):</label>
-            <input type="number" id="budget" name="budget" required>
-            
-            <label for="people">Number of People:</label>
-            <input type="number" id="people" name="people" required>
-            
-            <label for="location">Location:</label>
-            <input type="text" id="location" name="location" required>
-            
-            <label for="interests">Interests:</label>
-            <textarea id="interests" name="interests" required></textarea>
-            
-            <button type="submit">Generate SideQuest</button>
-        </form>
-        
-        <div id="quest-output" class="quest-output hidden">
-            <h2>Generated Quest:</h2>
-            <p id="quest-description"></p>
-            <div id="map"></div>
+    <header>
+        <h1>selfCollection</h1>
+        <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="ashes.html">Letter to Ashes</a></li>
+              <li><a href="mood.html">Mood Tracker</a></li>
+              <li><a href="breathe.html">Breathing Exercise</a></li>
+              <li><a href="affirmations.html">Affirmations</a></li>
+              <li><a href="resources.html">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+  
+    <main class="homepage-container">
+        <h1>Welcome to Your Wellness Hub!</h1>
+        <p>Explore our site for different tools to improve your mental and emotional wellbeing.</p>
+
+        <div id="random-quote">
+            <p id="quote-text">Loading quote...</p>
+            <p id="quote-author">- Loading...</p>
         </div>
-    </div>
+
+        <!-- Section for each page on the site -->
+        <section class="grid-container">
+            <!-- Letter to Ashes Section -->
+            <div class="grid-item">
+                <h2>📜 Letter to Ashes</h2>
+                <p>Release your thoughts and emotions by writing a letter and watching it turn into ashes. A unique exercise for catharsis.</p>
+                <a href="ashes.html" class="button">Explore</a>
+            </div>
+
+            <!-- Breathing Exercise Section -->
+            <div class="grid-item">
+                <h2>🧘‍♀️ Box Breathing Exercise</h2>
+                <p>A calming breathing game to help center your mind and relax your body. Time your breath with the wave and reset your peace.</p>
+                <a href="breathe.html" class="button">Try it Now</a>
+            </div>
+
+            <!-- Mood Tracker Section -->
+            <div class="grid-item">
+                <h2>😊 Mood Tracker</h2>
+                <p>Track your mood daily and reflect on what factors contribute to it. Save your moods and see your progress over time.</p>
+                <a href="mood.html" class="button">Start Tracking</a>
+            </div>
+
+            <!-- Affirmations Section -->
+            <div class="grid-item">
+                <h2>💬 Affirmations</h2>
+                <p>Write and reflect on positive affirmations to boost your confidence and mental clarity. Customize your affirmations to suit your needs.</p>
+                <a href="affirmations.html" class="button">Create Affirmations</a>
+            </div>
+
+            <!-- Resources Section -->
+            <div class="grid-item">
+                <h2>🧠 Mental Health Resources</h2>
+                <p>Access a collection of helpful mental health resources, outreach programs, and exercises to support your journey to wellness.</p>
+                <a href="resources.html" class="button">Explore Resources</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made with ❤️ for mental health awareness</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>

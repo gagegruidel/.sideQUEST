@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Affirmations</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="affirmations.css">
+</head>
+<body>
+  <header>
+    <h1>Affirmations</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="ashes.html">Letter to Ashes</a></li>
+        <li><a href="mood.html">Mood Tracker</a></li>
+        <li><a href="breathe.html">Breathing Exercise</a></li>
+        <li><a href="affirmations.html">Affirmations</a></li>
+        <li><a href="resources.html">Resources</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="affirmations-container">
+      <h2>Positive Affirmations</h2>
+      <div id="affirmation-display">Your affirmation will appear here...</div>
+
+      <h3>Add Your Own Affirmations</h3>
+      <form id="affirmation-form">
+        <input type="text" id="new-affirmation" placeholder="Enter affirmations separated by commas" required>
+        <button type="submit">Add Affirmations</button>
+      </form>
+    </div>
+
+    <audio id="bowl-sound" src="tibetan_bowl.wav" preload="auto"></audio>
+    <audio id="background-music" loop="true" src="calming_music.mp3" preload="auto"></audio>
+
+  </main>
+    <footer>
+        <p>&copy; 2024 selfCollection</p>
+      </footer>
+      <script src="script.js"></script>
+</body>
+</html>

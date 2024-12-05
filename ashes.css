@@ -1,0 +1,76 @@
+#letter-container {
+    position: relative;
+    width: 80%;
+    margin: 20px auto;
+    background: #fffbe7;
+    border: 2px solid #8b5e3b;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    height: 400px;
+  }
+
+  textarea {
+    width: 100%;
+    height: 300px;
+    border: none;
+    background: transparent;
+    font-size: 1.5rem;
+    color: #333;
+    resize: none;
+    outline: none;
+    font-family: 'Merriweather', serif;
+    z-index: 2;
+  }
+  
+  #fire-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    background: #ff4500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 3;
+  }
+  
+  #flames-video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 1;
+  }
+  
+  #flames-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #burned-message {
+    display: none; /* Initially hidden */
+    color: red;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Arial', sans-serif;
+    animation: fadeInOut 3s ease-in-out;
+  }
+  
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }

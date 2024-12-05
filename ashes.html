@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Letter to Ashes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="ashes.css">
+</head>
+<body>
+    <header>
+        <h1>Letter to Ashes</h1>
+        <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="ashes.html">Letter to Ashes</a></li>
+              <li><a href="mood.html">Mood Tracker</a></li>
+              <li><a href="breathe.html">Breathing Exercise</a></li>
+              <li><a href="affirmations.html">Affirmations</a></li>
+              <li><a href="resources.html">Resources</a></li>
+            </ul>
+          </nav>
+        </header>
+  <main>
+    <div id="letter-container">
+        <textarea id="ashes-text" placeholder="Write your letter here..."></textarea>
+        <button id="fire-button">Burn</button>
+        <div id="flames-video-container">
+          <video id="flames-video" autoplay muted playsinline>
+            <source src="embers.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+      <div id="burned-message">It has been burned, it has been released</div>
+  </main>
+  <footer>
+    <p>&copy; 2024 selfCollection</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

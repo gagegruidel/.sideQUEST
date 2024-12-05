@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mood Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="mood.css">
+</head>
+<body>
+    <header>
+        <h1>Mood Tracker</h1>
+        <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="ashes.html">Letter to Ashes</a></li>
+              <li><a href="mood.html">Mood Tracker</a></li>
+              <li><a href="breathe.html">Breathing Exercise</a></li>
+              <li><a href="affirmations.html">Affirmations</a></li>
+              <li><a href="resources.html">Resources</a></li>
+            </ul>
+          </nav>
+        </header>
+      </header>
+  <main>
+    <h1>😊 Mood Tracker</h1>
+    <form id="mood-form">
+      <label for="mood">Today's Mood: <span>🌈</span></label>
+      <select id="mood">
+        <option value="Happy">😊 Happy</option>
+        <option value="Sad">😢 Sad</option>
+        <option value="Excited">🤩 Excited</option>
+        <option value="Stressed">😟 Stressed</option>
+        <option value="Relaxed">😌 Relaxed</option>
+      </select>
+
+      <label for="reason">Reason: <span>🧐</span></label>
+      <select id="reason">
+        <option value="Health">💪 Health</option>
+        <option value="Exercise">🏃‍♂️ Exercise</option>
+        <option value="Friends">👫 Friends</option>
+        <option value="hobbies">🎨 Hobbies</option>
+        <option value="relaxation">🌿 Relaxation</option>
+        <option value="Work">💼 Work</option>
+        <option value="Other">🌟 Other</option>
+      </select>
+
+      <label for="journal">Journal Entry: <span>📖</span></label>
+      <textarea id="journal" rows="4" placeholder="Write your thoughts here..."></textarea>
+      
+      <button type="button" id="save-mood">✅ Save Entry</button>
+      <button type="button" id="clear-history">🗑️ Clear History</button>
+    </form>
+    
+    <section id="mood-history">
+      <h2>📚 Saved Moods</h2>
+      <ul id="history-list"></ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 selfCollection</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

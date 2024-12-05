@@ -1,61 +1,170 @@
+/* Global styles for the entire site */
+
+/* Body */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f8ff;
-    color: #333;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
+    background-color: #A9D8E6; /* Soft pastel blue background */
+    color: #333333; /* Dark gray text for readability */
 }
 
-.container {
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 80%;
-    margin: 40px auto;
+/* Header */
+header {
+    background-color: #4C9CBF; /* Muted teal background */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
 }
 
-.hidden {
-    display: none;
+/* Navigation */
+nav {
+    margin-top: 10px;
 }
 
-h1, h2 {
-    color: #FF6347;
+/* Navigation menu */
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Allows the items to wrap when screen size is smaller */
+    margin: 0;
 }
 
-form {
-    margin: 20px 0;
+header nav ul li {
+    display: inline;
 }
 
-label {
-    display: block;
-    margin: 10px 0;
+header nav ul li a {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ffffff; /* White background for nav items */
+    color: #1D5C63; /* Darker teal for better contrast */
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
 }
 
-input, textarea, button {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #ddd;
+/* Hover effect */
+header nav ul li a:hover {
+    background-color: #A8D8B9; /* Soft mint green for hover */
+    color: #333333; /* Dark text for better contrast */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Darker shadow for depth on hover */
+}
+
+/* Active link effect */
+header nav ul li a:active {
+    background-color: #77A9A4; /* Slightly darker muted teal when active */
+    color: white;
+}
+
+/* Button styling */
+.button {
+    background-color: #A8D8B9; /* Soft mint green */
+    color: #333333; /* Dark gray text for better contrast */
+    padding: 10px 20px;
+    border: none;
+    text-decoration: none;
     border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+    transition: background-color 0.3s ease;
 }
 
-button {
-    background-color: #FF6347;
-    color: #fff;
-    cursor: pointer;
+.button:hover {
+    background-color: #77A9A4; /* Slightly darker mint green for hover */
 }
 
-button:hover {
-    background-color: #e53e34;
+/* Flex grid for homepage */
+.homepage-container {
+    padding: 20px;
+    text-align: center;
 }
 
-.quest-output {
-    margin-top: 20px;
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
 }
 
-#map {
-    width: 100%;
-    height: 400px;
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.grid-item {
+    background-color: white;
+    padding: 20px;
     border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #4C9CBF; /* Muted teal for footer */
+    color: #333333;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    /* Adjust the font size of nav links */
+    header nav ul li a {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    /* Stack nav links vertically on smaller screens */
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Adjust the grid container for smaller screens */
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further adjust the font size and padding on very small screens */
+    header nav ul li a {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+
+    /* Stack nav links vertically */
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Adjust the grid to one column */
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
 }
