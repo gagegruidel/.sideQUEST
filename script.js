@@ -295,7 +295,12 @@ document.addEventListener("DOMContentLoaded", function() {
       { text: "Happiness is not something ready-made. It comes from your own actions.", author: "Dalai Lama" },
       { text: "The purpose of life is not to be happy. It is to be useful, to be honorable, to be compassionate, to have it make some difference that you have lived and lived well.", author: "Ralph Waldo Emerson" },
       { text: "In the middle of difficulty lies opportunity.", author: "Albert Einstein" },
-      { text: "Your life is your message to the world. Make sure it's inspiring.", author: "Lori Deschene" }
+      { text: "Your life is your message to the world. Make sure it's inspiring.", author: "Lori Deschene" },
+      { text: "The greatest glory in living lies not in never falling, but in rising every time we fall.", author: "Nelson Mandela" },
+      { text: "The way to get started is to quit talking and begin doing.", author: "Walt Disney" },
+      { text: "The future belongs to those who believe in the beauty of their dreams.", author: "Eleanor Roosevelt" },
+      { text: "You must be the change you wish to see in the world.", author: "Mahatma Gandhi" },
+      { text: "It is during our darkest moments that we must focus to see the light.", author: "Aristotle" }
     ];
   
     const randomIndex = Math.floor(Math.random() * quotes.length);
